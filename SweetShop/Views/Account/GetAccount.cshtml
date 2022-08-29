@@ -1,0 +1,26 @@
+﻿@using SweetShop.Domain.Entities
+
+@model Account
+
+@{
+	ViewBag.Title = "title";
+	Layout = "_Layout";
+} 
+
+<div class="card-account-catalog ">
+	<p class="user-information"><span style="font-weight:700;">Логин:</span>@Model.Username</p>
+	<p class="user-information"><span style="font-weight:700;">Имя:</span>@Model.User.Name</p>
+	<p class="user-information"><span style="font-weight:700;">Фамилия:</span>@Model.User.Surname</p>
+	<p class="user-information"><span style="font-weight:700;">Возраст:</span>@Model.User.Age</p>
+	<p class="user-information"><span style="font-weight:700;">Роль пользователя:</span>@Model.Role</p>
+
+	
+</div>
+@foreach(var ac in @Model.Purchases){
+
+	<div class="card-account-catalog">
+		<p class="user-information"><span  style="font-weight:700;">Заказ номер: </span>@ac.Id</p>
+		<p class="user-information"><span  style="font-weight:700;">Сумма: </span>@ac.Sum</p>
+		<p class="user-information"><span  style="font-weight:700;">Дата: </span>@ac.DateTime.ToString()</p>
+	</div>
+}

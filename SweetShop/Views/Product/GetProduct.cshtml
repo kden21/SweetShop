@@ -1,0 +1,18 @@
+﻿@using SweetShop.Domain
+@model Product
+
+@{
+	ViewBag.Title = "title";
+	Layout = "_Layout";
+} 
+
+<div class="card-product-catalog">
+	
+	<img class="img-product-catalog" src="https://mdshow.ru/pictures/product/middle/212141_middle.jpg"/>
+	<h2 class="name-product-catalog">@Model.Name</h2>
+	<p class="product-description-text"><span style="font-weight: bold;">Описание:</span>@Model.Description</p>
+	<p class="product-description-text"><span style="font-weight: bold;">Страна-производитель:</span>@Model.CountryProducing</p>
+	<p class="product-description-text"><span style="font-weight: bold;">Масса:</span>@Model.Weight кг</p>
+	<p class="price-product-catalog">@Model.Price ₽</p>
+	<img class="img-shopping-cart-catalog" src="https://avatanplus.com/files/resources/original/5ed9e94e590e117283375a1d.png"/>
+</div>

@@ -1,0 +1,138 @@
+﻿.prefaceHome {
+    margin: 35px;
+    font-size: 25px;
+}
+h1 {
+    font-family: Courier New;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.h1Text-index {
+    color: #500217;
+    font-size: 100px;
+    text-align: center;
+    box-shadow: 0px 7px 10px -9px rgba(0, 0, 0, .5)
+}
+.h2Text-index {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: left;
+
+}
+    
+.card-index1 {
+    margin-top: 100px;
+    margin-left: 350px;
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    border-radius: 175px;
+    box-shadow: 0 2px 25px #989898;
+}
+a.blubtn {
+    width: 130px;
+    text-align: center;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+    border: #7e0321 1px solid;
+    color: #7e0321;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 50px 50px;
+    transition: .5s;
+    border-radius: 00px;
+}
+
+    a.blubtn:hover {
+        top: 5px;
+        transition: .5s;
+        color: #b3637e;
+        border: #b3637e 1px solid;
+        border-radius: 20px;
+    }
+
+    a.blubtn:active {
+        color: #000;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #FFF;
+    }
+
+
+
+.adaptivny-slayder {
+    float: left;
+    position: relative;
+    max-width: 960px;
+    margin-left:50px;
+    margin-top:50px;
+    margin-right:50px;
+    margin-bottom:100px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+    .adaptivny-slayder input[name="kadoves"] {
+        display: none;
+    }
+
+.kadoves {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: center;
+    width: 100%;
+}
+
+    .kadoves label {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        margin: 0 3px;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+        border-radius: 50%;
+        border: 5px solid #2f363c;
+        background-color: #738290;
+    }
+
+#slaid1:checked ~ .kadoves label[for="slaid1"] {
+    background-color: white;
+}
+
+#slaid2:checked ~ .kadoves label[for="slaid2"] {
+    background-color: white;
+}
+
+#slaid3:checked ~ .kadoves label[for="slaid3"] {
+    background-color: white;
+}
+
+.adaptivny-slayder-lasekun {
+    overflow: hidden;
+}
+
+.abusteku-deagulus {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+    .abusteku-deagulus img {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+#slaid1:checked ~ adaptivny-slayder-lasekun abusteku-deagulus {
+    transform: translate(0);
+}
+
+#slaid2:checked ~ .adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-100%);
+}
+
+#slaid3:checked ~ .adaptivny-slayder-lasekun .abusteku-deagulus {
+    transform: translateX(-200%);
+}

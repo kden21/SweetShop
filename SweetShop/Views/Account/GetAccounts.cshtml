@@ -1,0 +1,21 @@
+﻿@model List<SweetShop.Domain.Entities.Account>
+@{
+	ViewBag.Title = "title";
+	Layout = "_Layout";
+	
+} 
+
+@if(Model.Count==0){
+	<h1 class="h1Text-index">Пользователей нет :(</h1>
+}
+else
+{
+	<h2>@Model.Count  users found</h2>
+	<div class="card-account-catalog">
+		@foreach(var account in Model)
+		{
+			<a asp-controller="Account" asp-action="GetAccount" asp-route-id="@account.Id"><p class="user-information"><span style="font-weight:700;">Логин:</span>@account.Username</p></a>
+		}		    
+		</div>
+	
+}

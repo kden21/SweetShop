@@ -1,0 +1,48 @@
+﻿.novigation-panel {
+    height: 50px;
+    background-color: rgb(255, 255, 255, 0.35);
+    box-shadow: 0 2px 25px #989898;
+}
+.bblockHome {
+    float: left;
+    height: 40px; /*Фиксируем высоту блока*/
+    margin-right: 5px;
+    text-align: center; /*Центрируем текст по горизонтали*/
+
+}
+.bblock-rightHome {
+    margin-left:1450px;
+    height: 40px; /*Фиксируем высоту блока*/
+    margin-right: 5px;
+    text-align: center; /*Центрируем текст по горизонтали*/
+}
+.aaap{
+    color:black;
+}
+    .aaap:hover {
+        color: #a54566;
+        font-weight:600;
+    }
+h2 {
+    font-size: 23px;
+    font-family: Century Gothic;
+    color: black;
+    margin: 10px 10px 10px 10px;
+}
+.bblockHomeVl {
+    float: left;
+    border-left: 2px solid #51021f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    opacity: 0.25
+}
+#img-icon {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+

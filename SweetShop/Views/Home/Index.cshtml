@@ -1,0 +1,41 @@
+﻿@using SweetShop.Domain.Entities
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="h1Text-index" style="font-weight:bold;">Welcome to SweetBox!</h1> 
+</div>
+
+
+<div class="adaptivny-slayder">
+  <input type="radio" name="kadoves" id="slaid1" checked>
+  <input type="radio" name="kadoves" id="slaid2">
+  <input type="radio" name="kadoves" id="slaid3">
+   
+  <div class="kadoves">
+  <label for="slaid1"></label>
+  <label for="slaid2"></label>
+  <label for="slaid3"></label>
+  </div>
+   
+  <div class="adaptivny-slayder-lasekun">
+  <div class="abusteku-deagulus">
+  <img src="https://h2rdesign.com/wp-content/uploads/2018/01/H2RDesign_CandyliciousTDM_IMG07-min.jpg"/>
+  <img src="https://galleryofstories.ru/wp-content/uploads/2020/07/assdd.jpg"/>
+  <img src="https://poisk-firm.ru/storage/employer/logo/40/5f/12/31ddb072bd65ceaeefbf222481.jpg"/>
+  </div>
+  </div>
+</div>
+<h2 class="h2Text-index"><span style="background-color:pink;" >SweetBox</span> - магазин сладостей</h2>
+<p class="prefaceHome">Мы предлагаем огромный выбор сладостей, которые очень сложно найти в обычных магазинах. Каждые 2 недели добавляем новые позиции!
+Еще и бесплатная доставка!</p>
+@if(!User.Identity.IsAuthenticated){
+    <a asp-controller="Product" asp-action="GetProducts" class="blubtn" >Перейти в каталог</a>
+}
+else if(User.Identity.IsAuthenticated){
+    <a form method="post" asp-controller="Account" asp-action="Register" class="blubtn" >Перейти в каталог</a>
+}
+
+
+
+

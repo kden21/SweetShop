@@ -1,0 +1,35 @@
+﻿@using SweetShop.Domain.ViewModels.Account
+@model RegisterViewModel
+
+@{
+	ViewBag.Title = "title";
+	Layout = "_Layout";
+} 
+
+<div class="card-registration">
+    <h2>Регистрация нового пользователя</h2>
+    
+	<form method="post" asp-controller="Account" asp-action="Register">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label asp-for="Name"></label><br />
+        <input  class="input-register" asp-for="Name" />
+        <p><span class="input-validatoin-text" asp-validation-for="Name"></span></p>
+    </div>
+    <div>
+        <label asp-for="Password"></label><br />
+        <input class="input-register" asp-for="Password" />
+        <p><span class="input-validatoin-text" asp-validation-for="Password"></span></p>
+    </div>
+    <div>
+        <label asp-for="PasswordConfirm"></label><br />
+        <input class="input-register" asp-for="PasswordConfirm" />
+        <p><span class="input-validatoin-text" asp-validation-for="PasswordConfirm"></span></p>
+    </div>
+    <div> 
+        <input class="button-register" type="submit" value="Регистрация"/>
+        <img id="img-icon"src="https://www.clipartmax.com/png/full/12-122241_candy-clipart-candies-icon.png" alt="Здесь должна быть картинка"/>
+    </div>
+</form>
+</div>
+

@@ -1,0 +1,31 @@
+﻿.card-cart-product {
+    border-radius: 15px;
+    margin: 20px 20px;
+    background-color: rgb(216, 12, 82, 0.5);
+    box-shadow: 0 2px 25px #989898;
+}
+.card-cart {
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255, 0.25);
+    box-shadow: 0 2px 25px #989898;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 25px #989898;
+}
+.text-cart-product{
+    margin: auto 10px;
+    font-size:26px;
+}
+.caaaa {
+    display: inline-block;
+    float:left;
+    width:100px;
+    background-color:#000000;
+}
+.card-sum {
+    text-align: right;
+    font-size: 26px;
+}
+
+    

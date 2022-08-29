@@ -1,0 +1,44 @@
+﻿.card-registration {
+    background-color: rgb(255, 255, 255, 0.25);
+    box-shadow: 0 2px 25px #989898;
+    width: 450px;
+    height: 450px;
+    margin: 30px auto;
+    border-radius: 30px;
+    text-align:center;
+    padding-top:20px;
+}
+.input-register {
+    border-radius: 15px;
+    height: 40px;
+    width: 250px;
+    background-color: #fecde1
+}
+.input-validatoin-text{
+    color:#c70941;
+    font-weight:600;
+}
+.button-register {
+    text-decoration:none;
+    background-color: #fecde1;
+    border-radius: 15px;
+    height: 30px;
+    width: 120px;
+    border-color: black;
+    border-width: 3px;
+}
+    .button-register:hover {
+        background-color: #c1486f
+    }
+.button-register1 {
+    background-color: #fecde1;
+    border-radius: 15px;
+    height: 30px;
+    width: 120px;
+    border-color:black;
+    border-width:3px;
+}
+
+    .button-register1:hover {
+        background-color: #c1486f
+    }

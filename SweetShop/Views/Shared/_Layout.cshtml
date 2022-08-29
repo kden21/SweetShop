@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNet.Identity.EntityFramework
+@using SweetShop.Domain.Entities
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SweetBox</title>
+    <link rel="stylesheet" href="~/css/backImage.css"/>
+    <link rel="shortcut icon" href="https://www.clipartmax.com/png/full/12-122241_candy-clipart-candies-icon.png"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/home.css"/>
+    <link rel="stylesheet" href="~/css/index.css"/>
+    <link rel="stylesheet" href="~/css/backImage.css"/>
+    <link rel="stylesheet" href="~/css/catalog.css"/>
+    <link rel="stylesheet" href="~/css/product.css"/>
+    <link rel="stylesheet" href="~/css/account.css"/>
+    <link rel="stylesheet" href="~/css/cartProducts.css"/>
+    <link rel="stylesheet" href="~/css/register.css"/>
+</head>
+<body class="backgroundImage" >
+
+<header >
+
+   <div class="novigation-panel">
+           <div>
+               <div class="bblockHome"><img id="img-icon"src="https://www.clipartmax.com/png/full/12-122241_candy-clipart-candies-icon.png" alt="Здесь должна быть картинка"></div>
+               <a asp-controller="Home" asp-action="Index"><div class="bblockHome"><h2 class="aaap">SweetBox</h2></div></a>
+               <div class="bblockHomeVl"></div>
+               @if(User.Identity.IsAuthenticated){
+                   <div class="bblockHome"><h2>Account</h2></div>
+               }
+               else if(!User.Identity.IsAuthenticated){
+                   <a form method="post" asp-controller="Account" asp-action="Login" ><div class="bblockHome"><h2 class="aaap">Account1</h2></div></a>
+               }
+               <div class="bblock-rightHome"><img id="img-icon" src="https://avatanplus.com/files/resources/original/5ed9e94e590e117283375a1d.png" alt="Здесь должна быть картинка"></div>
+          </div>
+   </div>
+</header>
+
+<div >
+    <main role="main">
+        @RenderBody()
+    </main>
+</div>
+
+
+
+</body>
+</html>
